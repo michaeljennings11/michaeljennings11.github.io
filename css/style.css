@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+body{
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin:0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.image.avatar img{
+  width: 14em;
+  margin: 0 0 20px 0;
+  border-radius: 0;
+  display: block;
+  overflow: hidden;
+}
+
+
+#side{
+  justify-content: space-between;
+  background: #ffcc66;
+  color: #d1f1e9;
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 14em;
+  right: 0;
+}
+
+#main-header{
+  background-image:url('../images/stars.jpg');
+  background-position:  top right;
+  background-repeat: no-repeat;
+  content: '';
+  background-size: cover;
+  display: block;
+  color: #fff;
+  height: 19.75em;
+  width: 100%;
+}
+
+
+#intro{
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 24px;
+  padding:2em;
+  padding-top:0;
+  margin-left: 20px;
+  margin-right: 16em;
+}
+
+#body-link a{
+  color: #ffcc66;
+  text-decoration: none;
+}
+
+#welcome{
+  font-size: 5em;
+  padding-top:3em;
+  padding-left:.4em;
+  margin-top:0;
+  margin-right: 14em;
+  margin-left: 20px;
+}
+
+#about{
+  font-size: 2.5em;
+  color: #ffcc66;
+}
+
+#logo a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 34px;
+}
+
+#nav ul{
+  padding:0;
+  list-style: none;
+}
+
+#nav li{
+  padding: 0.8em;
+}
+
+#nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+#main-footer{
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 14em;
+}
