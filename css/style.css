@@ -142,21 +142,39 @@ body{
   margin-right: 14em;
 }
 
+.fig {
+   display: block;
+   text-align: center;
+}
+
 figure {
+   text-align: initial;
    background-color: #fff;
    padding: 5px;
    font-size: .875em;
    display: table;
 }
 
+figure.one_column {
+   width: 70%;
+}
+
+figure.two_column {
+   width: 100%;
+}
+
 figure img {
     display: block;
+}
+
+figure video.one {
+    float: left;
     width: 100%;
 }
 
-figure video {
-    display: block;
-    width: 100%;
+figure video.two {
+    float: left;
+    width: 50%;
 }
 
 figcaption {
