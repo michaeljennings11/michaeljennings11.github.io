@@ -142,7 +142,7 @@ body{
   margin-right: 14em;
 }
 
-.fig {
+div.fig {
    display: block;
    text-align: center;
 }
