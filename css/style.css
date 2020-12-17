@@ -141,3 +141,22 @@ body{
   margin-bottom: 5px;
   margin-right: 14em;
 }
+
+figure {
+   background-color: #fff;
+   padding: 5px;
+   font-size: .875em;
+   display: table;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background: #fff;
+    padding: 0 5px 5px;
+}
