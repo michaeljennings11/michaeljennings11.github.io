@@ -9,14 +9,14 @@
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<a href="#" class="image avatar"><img src="../images/avatar.jpg" alt="" /></a>
 					<h1><strong>Michael Jennings</strong>
           <br />
 				  Astrophysicist	
@@ -29,57 +29,49 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>I study Physics and Astronomy.</h2>
+							<h2>Thermal Instability</h2>
 						</header>
-						<p>I am an undergraduate student in the Departments of
-               <a id="body-link" href="https://physics.berkeley.edu" target="_blank">Physics</a> and
-               <a id="body-link" href="https://astro.berkeley.edu" target="_blank">Astronomy</a>
-               at the University of California, Berkeley. I use computer
-               simulations to understand the Universe.
-            </p>
-
-            <p>I work with <a id="body-link" href="http://physics.unt.edu/~yl0657/" target="_blank">Yuan Li</a> 
-               (now at <a id="body-link" href="https://physics.unt.edu" target="_blank">University of North Texas</a>) 
-               who is a part of <a id="body-link" href="https://www.astro.princeton.edu/~quataert/" target="_blank">Eliot Quataert's</a> 
-               (now at <a id="body-link" href="https://web.astro.princeton.edu" target="_blank">Princeton</a>) 
-               group within the <a id="body-link" href="https://tac.berkeley.edu" target="_blank">Theoretical Astrophysics Center</a> 
-               at UC Berkeley. My latest project has been simulating thermal instabilities in the ISM to quantitatively identify differences in various cloud characteristics.
+      <p>Thermal instability (TI) refers to a runaway cooling/heating process in a plasma that results in condensation of cold gas clouds forming within a hotter background medium. TI criteria were first analyzed in <a id="body-link" href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142..531F/abstract" target="_blank">Field (1965)</a> and have since been studied in detail through numerical simulations. TI is used to explain the origins of the multiphase structure in the Interstellar Medium (ISM), as well as the existence of cooler gas clouds in the Intracluster Medium (ICM) and Circumgalactic Medium (CGM).
       </p>
+      
+      <p>Below are simulations of TI within the ISM from Jennings and Li (2020) <a id="body-link" href="https://arxiv.org/abs/2012.05252" target="_blank">arXiv:2012.05252</a>. We use the magnetohydrodynamics (MHD) code <a id="body-link" href="https://princetonuniversity.github.io/athena/" target="_blank">Athena++</a> to simulate the formation of cold clouds from uniform background. The first movie shows TI for pure hydrodynamic simulations without thermal conduction for various spectral index alpha.      
+      The next simulations include thermal conduction and viscosity with Pr = 10<sup>-2</sup> (low viscosity) and Pr = 2/3 (high viscosity).
+      The final set of simulations include a magnetic field initially oriented 45 degrees above the horizontal axis.
+      The first movie has initial plasma beta of 10<sup>6</sup> and the second has initial plasma beta of 1.
+      <br>
+      <div class="fig">
+        <figure class="one_column">
+          <video class="one" controls preload="metadata">
+            <source src="../videos/nocond.mp4#t=0.01" type="video/mp4">
+          </video>
+          <figcaption>Density plots of TI runs without thermal conduction or physical viscosity for various spectral indices alpha.</figcaption>
+        </figure>
+      </div>
+ 
+      <br>
 
-			<p>I also work with <a id="body-link" href="http://w.astro.berkeley.edu/~echiang/" target="_blank">Eugene Chiang</a> who is a part of the Department of Astronomy and Department of <a id="body-link" href="http://eps.berkeley.ed" target="_blank">Earth and Planetary Science</a> at UC Berkeley. My latest project has been determining the spin axes of gravitational instability fragments within protoplanetary disks.
-			</p>
+      <div class="fig">
+      <figure class="two_column">
+      <video class="two" controls preload="metadata">
+        <source src="../videos/pr1e-2.mp4#t=0.01" type="video/mp4">
+      </video>
+      <video class="two" controls preload="metadata">
+        <source src="../videos/pr2_3.mp4#t=0.01" type="video/mp4">
+      </video>
+      <figcaption>Density plots of TI runs with thermal conduction and physical viscosity with overlaid velocity vectors. The first video shows the run with Prandtl number of 10<sup>-2</sup>. The second video shows the run with Prandtl number of 2/3.</figcaption>
+      </figure>
+      </div>
 
-			<p>I also enjoy tutoring and mentoring students. From 2018 to 2020 I worked as a mentor for the student run <a id="body-link" href="https://ulab.berkeley.edu" target="_blank">ULab: Undergraduate Laboratory @ Berkeley</a> within the <a id="body-link" href="https://ulab.berkeley.edu/labs/physics" target="_blank">Physics and Astronomy Lab</a>. My group of students for the 2018-2019 academic year built muon detectors and collected data on muon incident angles at various altitudes. My group for the 2019-2020 year simulated the Kelvin Helmholtz Instability to study mixing layers in the ISM.
-			</p>
-			<br>
-			<img src="images/muon.jpg" alt="Muon Project, Spring 2019" width=45% height=auto>
-			<img src="images/mixing.jpg" alt="Mixing Project, Spring 2020" width=45% height=auto>
+      <br>
 
+      <video width=45% height=auto controls preload="metadata">
+        <source src="../videos/b1e6.mp4#t=0.01" type="video/mp4">
+      </video>
+      <video width=45% height=auto controls preload="metadata">
+        <source src="../videos/b1.mp4#t=0.01" type="video/mp4">
+      </video>
 					</section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall">
-								<a href="pages/ti.html" class="image fit thumb"><img src="images/thumbs/beta_alpha_small.jpg" alt="" /></a>
-								<h3>Thermal Instability</h3>
-							</article>
-							<article class="col-6 col-12-xsmall">
-								<a href="pages/gi.html" class="image fit thumb"><img src="images/thumbs/frag.jpg" alt="" /></a>
-								<h3>Gravitational Instability</h3>
-							</article>
-							<article class="col-6 col-12-xsmall">
-								<a href="pages/kh.html" class="image fit thumb"><img src="images/thumbs/mixing_visc.jpg" alt="" /></a>
-								<h3>Kelvin-Helmholtz Instability</h3>
-							</article>
-					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>You can email me at robertmjenningsjr{at}berkeley.edu if you would like to get in touch!</p>
-					</section>
 
 				<!-- Four -->
 				<!--
@@ -414,12 +406,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
